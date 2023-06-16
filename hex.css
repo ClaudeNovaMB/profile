@@ -1,0 +1,36 @@
+.hexagon {
+  /* Your hexagon styles here */
+  position: relative;
+  width: 100px; 
+  height:50px;
+  background-color: #567ba2;
+  margin: 40px 0;
+  
+  transition: border 1s ease;
+}
+
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  
+ 
+
+}
+
+.hexagon:before {
+  bottom: 100%;
+  border-bottom: 40px solid #567ba2;
+}
+
+.hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 40px solid #567ba2;
+  border-color: blueviolet;
+}
+
